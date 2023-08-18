@@ -1,0 +1,132 @@
+/* Import fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* Reset default margin and padding */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background styling for the whole page */
+html,body{
+    height: 100vh;
+    width: 100%;
+    /* Use a background image with a semi-transparent overlay */
+    background: url(background.jpg) rgba(0,0,0,0.5);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    /* Hide any overflowing content */
+    overflow: hidden;
+}
+
+/* Styling for the main canvas container */
+.canvas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    position: relative;
+}
+
+/* Styling for the canvas element */
+#myCanvas{
+    border: 3px solid white;
+}
+
+/* Styling for the header text */
+.header{
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 0.5rem;
+    font-size: 3.6rem;
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the shop buttons container */
+.shop-buttons{
+    float: left;
+    margin-top: 8rem;
+}
+
+/* Styling for the individual shop buttons */
+#shop1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 0.4rem 1rem;
+    letter-spacing: 0.1rem;
+    background-color: black;
+    color: white;
+    border: 4px solid;
+    border-bottom: none;
+}
+#shop2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 0.4rem 1.1rem;
+    letter-spacing: 0.1rem;
+    background-color: black;
+    color: white;
+    border: 4px solid;
+    border-bottom: none;
+}
+#shop3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    cursor: pointer;
+    padding: 0.4rem 2.5rem;
+    letter-spacing: 0.1rem;
+    background-color: black;
+    color: white;
+    border: 4px solid;
+}
+
+/* Styling for the points and apple display on the right side */
+.right{
+    margin-top: 9rem;
+    float: right;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    margin-right: 2rem;
+    color: white;
+}
+
+/* Styling for point and apple labels */
+#points, #apple{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Styling for total point and total apple values */
+#totalPoint, #totalApple{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 3rem;
+}
+
+/* Styling for the "Play Again" button */
+.trybutton{
+    margin-top: 2rem;
+    margin-left: 1.4rem;
+}
+
+#tryAgain{
+    font-family: 'Montserrat', sans-serif;
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    padding: 1.6rem 2rem;
+    border-radius: 2rem;
+    transition: 0.5s ease-in-out;
+}
+
+/* Styling for the "Play Again" button on hover */
+#tryAgain:hover{
+    background-color: rgb(104, 104, 104);
+    transform: scale(1.2);
+}
